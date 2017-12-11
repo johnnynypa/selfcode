@@ -1,0 +1,13 @@
+@import './_mixings.scss';
+@include font-face("StreetvertisingBold", /dist/fonts/StreetvertisingBold, bold);
+@include font-face("Streetvertising", /dist/fonts/Streetvertising, normal);
+@include font-face("StreetvertisingLight", /dist/fonts/StreetvertisingLight, light);
+
+//Fonts
+$fuente_Bold : "StreetvertisingBold";
+$fuente_Light : "StreetvertisingLight";
+$fuente : "Streetvertising";
+
+
+//Colors
+$Morado_Primary : #62163b;

@@ -1,0 +1,11 @@
+@import './_global.scss';
+@import './_menu.scss';
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: $fuente;
+}
