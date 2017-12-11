@@ -1,4 +1,57 @@
-header{
-    width: 100vw;
+@import './_mixings.scss';
+@import './_global.scss';
+
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: #fff;
+
+    box-shadow: 1px 3px 4px #888888;
+
+    transition: all .7s;
+    
+    font-family: $fuente_Bold;
+    font-size: 15px;
+}
+
+.logo-nav{
+    max-height: 4vh;
+}
+
+//Flex, row, spacer-around
+.menu, ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul{
+    width: 100%;
+    list-style-type: none;    
+}
+
+.container-menu{
+    width: 33.3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fixed {
     height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.link-nav {
+    padding-top: 3vh;
+    padding-bottom: 2.5vh;
+    color: $Morado_Opacity;
+}
+
+.link-nav-active {
+    @include background($huellaOpacity, center, no-repeat, 5vh);
+    color: $Morado_Primary;
 }
