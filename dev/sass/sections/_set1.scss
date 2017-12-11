@@ -5,7 +5,7 @@ $Inclinacion : -33deg;
 
 #sect1{
     .background-section{
-        @include background("images/005.jpg", 10, 0, repeat, 100vw);
+        @include background("/images/005.jpg", 10, 0, repeat, 100vw);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -13,12 +13,12 @@ $Inclinacion : -33deg;
         .diagonal{
             height: 100vh;
             width: 55vw;
-            @include background("images/005.jpg", -0,0, no-repeat, 100vw);
+            @include background("/images/005.jpg", -0,0, no-repeat, 100vw);
             transform: skewX($Inclinacion);
             div{
                 width: 100%;
                 height: 100%;
-                background-color: rgba(230, 230, 230, .85);
+                background-color: rgba(230, 230, 230, .9);
             }
         }
         .diag{
@@ -108,25 +108,15 @@ $Inclinacion : -33deg;
     }
 
     .content-section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include textSectionPadre();
         div{
-            width: 35%;
-            text-align: center;
+            @include textSection(38%);
         }
-        .propuesta{
-            font-family: $fuente_Bold;
-            font-size: 28px;
-            color: $Morado_Primary;
+        .propuesta {
+            @include textTitleSection();
         }
-        .subpropuesta{
-            font-family: $fuente_Light;
-            font-size: 20px;
-            color: #2a2628;
-            border-left: 2px solid #333;
-            border-right: 2px solid #333;
+        .subpropuesta {
+            @include textSubtitleSection(5vh);
         }
     }
 }

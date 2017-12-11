@@ -52,3 +52,31 @@
 		size: $size;
     }
 }
+
+@mixin textSectionPadre(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+@mixin textSection($width : 35%){
+	width: $width;
+	text-align: center;
+}
+
+@mixin textTitleSection() {
+	font-family: $fuente_Bold;
+	font-size: 28px;
+	color: $Morado_Primary;
+}
+
+@mixin textSubtitleSection($borde : 6vh) {
+	padding-left: $borde;
+	padding-right: $borde;
+	font-family: $fuente_Light;
+	font-size: 20px;
+	color: #2a2628;
+	border-left: 2px solid #333;
+	border-right: 2px solid #333;
+}

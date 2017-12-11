@@ -11,6 +11,9 @@ switch(window.location.pathname){
     case '/':
         document.getElementById('link-home').classList.add('link-nav-active');
         break;
+    case '/index.html':
+        document.getElementById('link-home').classList.add('link-nav-active');
+        break;
     case '/mision.html':
         document.getElementById('link-mision').classList.add('link-nav-active');
         break;
