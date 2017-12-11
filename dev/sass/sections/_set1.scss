@@ -1,0 +1,132 @@
+@import '../_mixings.scss';
+@import '../_global.scss';
+
+$Inclinacion : -33deg;
+
+#sect1{
+    .background-section{
+        @include background("/dist/images/005.jpg", 10, 0, repeat, 100vw);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .diagonal{
+            height: 100vh;
+            width: 55vw;
+            @include background("/dist/images/005.jpg", -0,0, no-repeat, 100vw);
+            transform: skewX($Inclinacion);
+            div{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(230, 230, 230, .85);
+            }
+        }
+        .diag{
+            height: 50vh;
+            min-width: 10px;
+            position: absolute;
+            background-color: $Morado_Primary;
+            transform: skewX($Inclinacion);
+        }
+        #diag1{
+            width: 70px;
+            left: 0;
+            top: -25vh;
+            background-color: $Morado_Dark_Opacity;
+        }
+        #diag2{
+            width: 15px;
+            left: -76px;
+            top: 11vh;
+            background-color: $Morado_Primary;
+        }
+        #diag3{
+            width: 23px;
+            left: 0px;
+            top: 50vh;
+            background-color: $Morado_Primary;
+        }
+        #diag4{
+            height: 100vh;
+            width: 50px;
+            left: 155px;
+            top: 0vh;
+            background-color: $Morado_Dark_Opacity;
+        }
+        #diag5{
+            width: 10px;
+            left: -65px;
+            top: 90vh;
+            background-color: $Morado_Primary;
+        }
+        #diag6{
+            width: 23px;
+            left: 84.5vw;
+            top: -28vh;
+            background-color: $Morado_Primary;
+        }
+        #diag7{
+            width: 45px;
+            left: 80vw;
+            top: -5vh;
+            background-color: $Morado_Primary;
+        }
+        #diag8{
+            width: 10px;
+            left: 94vw;
+            top: -37vh;
+            background-color: $Morado_Primary;
+        }
+        #diag9{
+            height: 70vh;
+            width: 8px;
+            left: 90vw;
+            top: -7vh;
+            background-color: $Morado_Primary;
+        }
+        #diag10{
+            height: 65vh;
+            width: 8px;
+            left: 92vw;
+            top: -7vh;
+            background-color: $Morado_Dark_Opacity;
+        }
+        #diag11{
+            height: 70vh;
+            width: 8px;
+            left: 94.8vw;
+            top: 20vh;
+            background-color: $Morado_Primary;
+        }
+        #diag12{
+            height: 70vh;
+            width: 20vw;
+            left: 93vw;
+            top: 30vh;
+            background-color: $Morado_Dark_Opacity;
+        }
+    }
+
+    .content-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        div{
+            width: 35%;
+            text-align: center;
+        }
+        .propuesta{
+            font-family: $fuente_Bold;
+            font-size: 28px;
+            color: $Morado_Primary;
+        }
+        .subpropuesta{
+            font-family: $fuente_Light;
+            font-size: 20px;
+            color: #2a2628;
+            border-left: 2px solid #333;
+            border-right: 2px solid #333;
+        }
+    }
+}

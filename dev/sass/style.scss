@@ -1,5 +1,6 @@
 @import './_global.scss';
 @import './_menu.scss';
+@import './_sections.scss';
 
 *{
     box-sizing: border-box;
@@ -8,7 +9,6 @@
 body{
     margin: 0;
     font-family: $fuente;
-    padding-bottom: 100em;
 }
 
 a{

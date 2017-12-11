@@ -43,10 +43,11 @@
 	}
 }
 
-@mixin background($imgpath,$position:0 0,$repeat: no-repeat, $size : 0) {
+@mixin background($imgpath,$position:0 0, $positionX : 0, $repeat: no-repeat, $size : 0) {
     background: {
         image: url($imgpath);
-        position: $position;
+		position: $position;
+		position-x: $positionX;
 		repeat: $repeat;
 		size: $size;
     }
