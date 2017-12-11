@@ -1,7 +1,7 @@
 @import './_mixings.scss';
-@include font-face("StreetvertisingBold", "/fonts/StreetvertisingBold", bold);
-@include font-face("Streetvertising", "/fonts/Streetvertising", normal);
-@include font-face("StreetvertisingLight", "/fonts/StreetvertisingLight", light);
+@include font-face("StreetvertisingBold", "fonts/StreetvertisingBold", bold);
+@include font-face("Streetvertising", "fonts/Streetvertising", normal);
+@include font-face("StreetvertisingLight", "fonts/StreetvertisingLight", light);
 
 //Fonts
 $fuente_Bold : "StreetvertisingBold";
