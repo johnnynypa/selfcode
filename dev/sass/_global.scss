@@ -1,7 +1,7 @@
 @import './_mixings.scss';
-@include font-face("StreetvertisingBold", /dist/fonts/StreetvertisingBold, bold);
-@include font-face("Streetvertising", /dist/fonts/Streetvertising, normal);
-@include font-face("StreetvertisingLight", /dist/fonts/StreetvertisingLight, light);
+@include font-face("StreetvertisingBold", /fonts/StreetvertisingBold, bold);
+@include font-face("Streetvertising", /fonts/Streetvertising, normal);
+@include font-face("StreetvertisingLight", /fonts/StreetvertisingLight, light);
 
 //Fonts
 $fuente_Bold : "StreetvertisingBold";
@@ -16,5 +16,5 @@ $Morado_Opacity : rgb(127, 100, 121);
 $Morado_Primary_Claro : #9b3255;
 
 //Imagenes
-$huella : "/dist/images/huella.png";
-$huellaOpacity : "/dist/images/huellaOpacity.png";
+$huella : "images/huella.png";
+$huellaOpacity : "images/huellaOpacity.png";
