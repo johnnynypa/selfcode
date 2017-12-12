@@ -1,0 +1,102 @@
+@import '../_global.scss';
+@import '../_mixings.scss';
+
+$Inclinacion : 33deg;
+
+#sect3{
+    .background-section{
+        z-index: -20;
+        @include background("/images/004.jpg", 0, 0, no-repeat, 100vw);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .diag{
+            height: 50vh;
+            min-width: 10px;
+            position: absolute;
+            background-color: $Blanco_Opacity;
+            transform: skewX($Inclinacion);
+        }
+        #diag1{
+            height: 60vh;
+            width: 20vw;
+            left: -11vw;
+            top: 40vh;
+        }
+        #diag2{
+            height: 60vh;
+            width: 12px;
+            left: 5.2vw;
+            top: 25vh;
+            background-color: white;
+        }
+        #diag3{
+            height: 85vh;
+            width: 23px;
+            left: 11vw;
+            top: 15vh;
+        }
+        #diag4{
+            height: 70vh;
+            width: 12px;
+            left: 7vw;
+            top: -10vh;
+            background-color: white;
+        }
+        #diag5{
+            width: 25px;
+            left: 12vw;
+            top: -15vh;
+            background-color: white;
+        }
+        #diag6{
+            width: 12px;
+            left: 12vw;
+            top: -25vh;
+            background-color: white;
+        }
+        #diag7{
+            width: 45px;
+            left: 35vw;
+            top: 0vh;
+            background-color: white;
+        }
+        #diag8{
+            height: 100vh;
+            width: 45vw;
+            left: 47vw;
+            top: 0vh;
+            background-color: $Blanco_Opacity;
+        }
+        #diag9{
+            height: 10vh;
+            width: 10px;
+            left: 98vw;
+            top: 10vh;
+            background-color: white;
+        }
+        #diag10{
+            width: 50px;
+            left: 95vw;
+            top: -3vh;
+            background-color: white;
+        }
+        #diag11{
+            // height: 70vh;
+            width: 12px;
+            left: 98vw;
+            top: 42vh;
+            background-color: white;
+        }
+        #diag12{
+            width: 50px;
+            left: 102vw;
+            top: -3vh;
+            background-color: white;
+        }
+    }
+
+    .content-section{
+
+    }
+}

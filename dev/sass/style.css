@@ -357,6 +357,132 @@ section, .background-section, .content-section {
   border-right: 2px solid #333;
 }
 
+@font-face {
+  font-family: "StreetvertisingBold";
+  font-weight: bold;
+  src: url("/fonts/StreetvertisingBold.eot?") format("eot"), url("/fonts/StreetvertisingBold.woff2") format("woff2"), url("/fonts/StreetvertisingBold.woff") format("woff"), url("/fonts/StreetvertisingBold.ttf") format("truetype"), url("/fonts/StreetvertisingBold.svg#StreetvertisingBold") format("svg");
+}
+
+@font-face {
+  font-family: "Streetvertising";
+  font-weight: normal;
+  src: url("/fonts/Streetvertising.eot?") format("eot"), url("/fonts/Streetvertising.woff2") format("woff2"), url("/fonts/Streetvertising.woff") format("woff"), url("/fonts/Streetvertising.ttf") format("truetype"), url("/fonts/Streetvertising.svg#Streetvertising") format("svg");
+}
+
+@font-face {
+  font-family: "StreetvertisingLight";
+  font-weight: light;
+  src: url("/fonts/StreetvertisingLight.eot?") format("eot"), url("/fonts/StreetvertisingLight.woff2") format("woff2"), url("/fonts/StreetvertisingLight.woff") format("woff"), url("/fonts/StreetvertisingLight.ttf") format("truetype"), url("/fonts/StreetvertisingLight.svg#StreetvertisingLight") format("svg");
+}
+
+#sect3 .background-section {
+  z-index: -20;
+  background-image: url("/images/004.jpg");
+  background-position: 0;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#sect3 .background-section .diag {
+  height: 50vh;
+  min-width: 10px;
+  position: absolute;
+  background-color: rgba(230, 230, 230, 0.8);
+  transform: skewX(33deg);
+}
+
+#sect3 .background-section #diag1 {
+  height: 60vh;
+  width: 20vw;
+  left: -11vw;
+  top: 40vh;
+}
+
+#sect3 .background-section #diag2 {
+  height: 60vh;
+  width: 12px;
+  left: 5.2vw;
+  top: 25vh;
+  background-color: white;
+}
+
+#sect3 .background-section #diag3 {
+  height: 85vh;
+  width: 23px;
+  left: 11vw;
+  top: 15vh;
+}
+
+#sect3 .background-section #diag4 {
+  height: 70vh;
+  width: 12px;
+  left: 7vw;
+  top: -10vh;
+  background-color: white;
+}
+
+#sect3 .background-section #diag5 {
+  width: 25px;
+  left: 12vw;
+  top: -15vh;
+  background-color: white;
+}
+
+#sect3 .background-section #diag6 {
+  width: 12px;
+  left: 12vw;
+  top: -25vh;
+  background-color: white;
+}
+
+#sect3 .background-section #diag7 {
+  width: 45px;
+  left: 35vw;
+  top: 0vh;
+  background-color: white;
+}
+
+#sect3 .background-section #diag8 {
+  height: 100vh;
+  width: 45vw;
+  left: 47vw;
+  top: 0vh;
+  background-color: rgba(230, 230, 230, 0.8);
+}
+
+#sect3 .background-section #diag9 {
+  height: 10vh;
+  width: 10px;
+  left: 98vw;
+  top: 10vh;
+  background-color: white;
+}
+
+#sect3 .background-section #diag10 {
+  width: 50px;
+  left: 95vw;
+  top: -3vh;
+  background-color: white;
+}
+
+#sect3 .background-section #diag11 {
+  width: 12px;
+  left: 98vw;
+  top: 42vh;
+  background-color: white;
+}
+
+#sect3 .background-section #diag12 {
+  width: 50px;
+  left: 102vw;
+  top: -3vh;
+  background-color: white;
+}
+
 * {
   box-sizing: border-box;
 }
