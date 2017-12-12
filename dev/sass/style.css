@@ -483,6 +483,38 @@ section, .background-section, .content-section {
   background-color: white;
 }
 
+#sect3 .content-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+#sect3 .content-section .centerize {
+  width: 70vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+#sect3 .content-section .centerize .container-tres {
+  max-width: 250px;
+  height: 70vh;
+  max-height: 320px;
+  background-color: rgba(27, 0, 7, 0.92);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sect3 .content-section .centerize #tres2 {
+  max-height: 380px;
+}
+
 * {
   box-sizing: border-box;
 }

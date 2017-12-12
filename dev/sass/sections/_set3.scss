@@ -97,6 +97,33 @@ $Inclinacion : 33deg;
     }
 
     .content-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        .centerize{
+            width: 70vw;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            .container-tres{
+                max-width: 250px;
+                height: 70vh;
+                max-height: 320px;
+                background-color: $Morado_Dark_Opacity;
+                color: white;
 
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #tres2{
+                max-height: 380px;
+            }
+        }
     }
 }
