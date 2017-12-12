@@ -488,6 +488,7 @@ section, .background-section, .content-section {
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  z-index: 10;
 }
 
 #sect3 .content-section .centerize {
@@ -499,7 +500,9 @@ section, .background-section, .content-section {
 }
 
 #sect3 .content-section .centerize .container-tres {
-  max-width: 250px;
+  cursor: pointer;
+  z-index: 10;
+  max-width: 270px;
   height: 70vh;
   max-height: 320px;
   background-color: rgba(27, 0, 7, 0.92);
@@ -513,6 +516,90 @@ section, .background-section, .content-section {
 
 #sect3 .content-section .centerize #tres2 {
   max-height: 380px;
+}
+
+@font-face {
+  font-family: "StreetvertisingBold";
+  font-weight: bold;
+  src: url("/fonts/StreetvertisingBold.eot?") format("eot"), url("/fonts/StreetvertisingBold.woff2") format("woff2"), url("/fonts/StreetvertisingBold.woff") format("woff"), url("/fonts/StreetvertisingBold.ttf") format("truetype"), url("/fonts/StreetvertisingBold.svg#StreetvertisingBold") format("svg");
+}
+
+@font-face {
+  font-family: "Streetvertising";
+  font-weight: normal;
+  src: url("/fonts/Streetvertising.eot?") format("eot"), url("/fonts/Streetvertising.woff2") format("woff2"), url("/fonts/Streetvertising.woff") format("woff"), url("/fonts/Streetvertising.ttf") format("truetype"), url("/fonts/Streetvertising.svg#Streetvertising") format("svg");
+}
+
+@font-face {
+  font-family: "StreetvertisingLight";
+  font-weight: light;
+  src: url("/fonts/StreetvertisingLight.eot?") format("eot"), url("/fonts/StreetvertisingLight.woff2") format("woff2"), url("/fonts/StreetvertisingLight.woff") format("woff"), url("/fonts/StreetvertisingLight.ttf") format("truetype"), url("/fonts/StreetvertisingLight.svg#StreetvertisingLight") format("svg");
+}
+
+#sect4 .background-section {
+  background: linear-gradient(#F1E6EC, #F1E6EC);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#sect4 .background-section div {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "StreetvertisingBold";
+  color: rgba(128, 45, 87, 0.075);
+}
+
+#sect4 .background-section #sect2-1 {
+  height: 65vh;
+}
+
+#sect4 .background-section #sect2-1 span {
+  font-size: 45vh;
+  margin-left: -50vw;
+}
+
+#sect4 .background-section #sect2-2 {
+  height: 35vh;
+}
+
+#sect4 .background-section #sect2-2 span {
+  font-size: 23vh;
+  margin-left: 70vw;
+}
+
+#sect4 .content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#sect4 .content-section div {
+  width: 65%;
+  text-align: center;
+}
+
+#sect4 .content-section .propuesta {
+  font-family: "StreetvertisingBold";
+  font-size: 28px;
+  color: #62163b;
+}
+
+#sect4 .content-section .propuesta img {
+  max-height: 22vh;
+}
+
+#sect4 .content-section .subpropuesta {
+  padding-left: 5vh;
+  padding-right: 5vh;
+  font-family: "StreetvertisingLight";
+  font-size: 20px;
+  color: #2a2628;
+  border-left: 2px solid #333;
+  border-right: 2px solid #333;
 }
 
 * {

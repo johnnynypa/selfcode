@@ -30,3 +30,8 @@ switch(window.location.pathname){
         document.getElementById('link-contacto').classList.add('link-nav-active');
         break;
 }
+
+// document.getElementById('tres1')
+// .addEventListener('click', function (event) {
+//     alert("Hola");
+// });

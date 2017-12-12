@@ -101,6 +101,7 @@ $Inclinacion : 33deg;
         justify-content: center;
         flex-direction: row;
         align-items: center;
+        z-index: 10;
         .centerize{
             width: 70vw;
             display: flex;
@@ -108,7 +109,9 @@ $Inclinacion : 33deg;
             flex-direction: row;
             align-items: center;
             .container-tres{
-                max-width: 250px;
+                cursor: pointer;
+                z-index: 10;
+                max-width: 270px;
                 height: 70vh;
                 max-height: 320px;
                 background-color: $Morado_Dark_Opacity;

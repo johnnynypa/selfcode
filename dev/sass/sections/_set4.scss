@@ -1,0 +1,49 @@
+@import '../_global.scss';
+@import '../_mixings.scss';
+
+#sect4{
+    .background-section{
+        background: linear-gradient($Morado_Suave_Fondo , #F1E6EC);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        div{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $fuente_Bold;
+            color: $Morado_Primary_Claro;
+        }
+        #sect2-1{
+            height: 65vh;
+            span{
+                font-size: 45vh;
+                margin-left: -50vw;
+            }
+        }
+        #sect2-2{
+            height: 35vh;
+            span{
+                font-size: 23vh;
+                margin-left: 70vw;
+            }
+        }
+    }
+
+    .content-section{
+        @include textSectionPadre();
+        div{
+            @include textSection(65%);
+        }
+        .propuesta {
+            img{
+                max-height: 22vh;
+            }
+            @include textTitleSection();
+        }
+        .subpropuesta {
+            @include textSubtitleSection(5vh);
+        }
+    }
+}
