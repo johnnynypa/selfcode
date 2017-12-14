@@ -10,10 +10,12 @@ section, .background-section, .content-section{
 
 .content-section{
     position: relative;
-    z-index: -5;
+    z-index: 10;
 }
 
 @import './sections/_set1.scss';
 @import './sections/_set2.scss';
 @import './sections/_set3.scss';
 @import './sections/_set4.scss';
+@import './sections/_set5.scss';
+@import './sections/_set6.scss';

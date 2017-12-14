@@ -2,7 +2,10 @@
 @import '../_mixings.scss';
 
 #sect4{
+    
     .background-section{
+
+        z-index: -6;
         background: linear-gradient($Morado_Suave_Fondo , #F1E6EC);
         display: flex;
         justify-content: center;

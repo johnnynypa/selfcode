@@ -103,7 +103,7 @@ section, .background-section, .content-section {
 
 .content-section {
   position: relative;
-  z-index: -5;
+  z-index: 10;
 }
 
 @font-face {
@@ -537,6 +537,7 @@ section, .background-section, .content-section {
 }
 
 #sect4 .background-section {
+  z-index: -6;
   background: linear-gradient(#F1E6EC, #F1E6EC);
   display: flex;
   justify-content: center;
@@ -602,6 +603,220 @@ section, .background-section, .content-section {
   border-right: 2px solid #333;
 }
 
+@font-face {
+  font-family: "StreetvertisingBold";
+  font-weight: bold;
+  src: url("/fonts/StreetvertisingBold.eot?") format("eot"), url("/fonts/StreetvertisingBold.woff2") format("woff2"), url("/fonts/StreetvertisingBold.woff") format("woff"), url("/fonts/StreetvertisingBold.ttf") format("truetype"), url("/fonts/StreetvertisingBold.svg#StreetvertisingBold") format("svg");
+}
+
+@font-face {
+  font-family: "Streetvertising";
+  font-weight: normal;
+  src: url("/fonts/Streetvertising.eot?") format("eot"), url("/fonts/Streetvertising.woff2") format("woff2"), url("/fonts/Streetvertising.woff") format("woff"), url("/fonts/Streetvertising.ttf") format("truetype"), url("/fonts/Streetvertising.svg#Streetvertising") format("svg");
+}
+
+@font-face {
+  font-family: "StreetvertisingLight";
+  font-weight: light;
+  src: url("/fonts/StreetvertisingLight.eot?") format("eot"), url("/fonts/StreetvertisingLight.woff2") format("woff2"), url("/fonts/StreetvertisingLight.woff") format("woff"), url("/fonts/StreetvertisingLight.ttf") format("truetype"), url("/fonts/StreetvertisingLight.svg#StreetvertisingLight") format("svg");
+}
+
+#sect5 .background-section .background-background {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: -12;
+}
+
+#sect5 .background-section .background-background img {
+  max-height: 130vh;
+  margin-top: -20vh;
+  margin-left: -25vw;
+}
+
+#sect5 .background-section .background-background #back2 {
+  transform: rotate(180deg);
+}
+
+#sect5 .background-section .background-front {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sect5 .background-section .background-front .diagonal {
+  border-left: 20px solid #62163b;
+  border-right: 20px solid #62163b;
+  height: 100vh;
+  width: 70vw;
+  background-color: white;
+  transform: skewX(-33deg);
+}
+
+#sect5 .background-section .background-front .diag {
+  height: 50vh;
+  position: absolute;
+  background-color: #62163b;
+  transform: skewX(-33deg);
+}
+
+#sect5 .background-section .background-front #diag1 {
+  width: 12px;
+  left: 0;
+  top: -17vh;
+  background-color: #62163b;
+}
+
+#sect5 .background-section .background-front #diag2 {
+  width: 2px !important;
+  left: -20px;
+  top: -7vh;
+  background-color: #62163b;
+}
+
+#sect5 .background-section .background-front #diag3 {
+  height: 90vh;
+  width: 33vh;
+  left: -13vh;
+  top: 0vh;
+  background-color: rgba(56, 8, 22, 0.856);
+}
+
+#sect5 .background-section .background-front #diag4 {
+  height: 100vh;
+  width: 25px;
+  left: 180px;
+  top: 0vh;
+  background-color: rgba(56, 8, 22, 0.856);
+}
+
+#sect5 .background-section .background-front #diag5 {
+  width: 5px;
+  left: 18vw;
+  top: 84vh;
+  background-color: #62163b;
+}
+
+#sect5 .background-section .background-front #diag6 {
+  width: 15px;
+  left: 18vw;
+  top: 88vh;
+  background-color: #62163b;
+}
+
+#sect5 .background-section .background-front #diag7 {
+  height: 15vh;
+  width: 20px;
+  left: 65vw;
+  top: -5vh;
+  background-color: #62163b;
+}
+
+#sect5 .background-section .background-front #diag8 {
+  height: 100vh;
+  width: 25px;
+  left: 85vw;
+  top: 0vh;
+  background-color: rgba(56, 8, 22, 0.856);
+}
+
+#sect5 .background-section .background-front #diag9 {
+  height: 70vh;
+  width: 8px;
+  left: 90vw;
+  top: -7vh;
+  background-color: #62163b;
+}
+
+#sect5 .background-section .background-front #diag10 {
+  height: 65vh;
+  width: 8px;
+  left: 92vw;
+  top: -7vh;
+  background-color: rgba(27, 0, 7, 0.92);
+}
+
+#sect5 .background-section .background-front #diag11 {
+  height: 70vh;
+  width: 8px;
+  left: 94.8vw;
+  top: 20vh;
+  background-color: #62163b;
+}
+
+#sect5 .background-section .background-front #diag12 {
+  height: 70vh;
+  width: 20vw;
+  left: 93vw;
+  top: 30vh;
+  background-color: rgba(27, 0, 7, 0.92);
+}
+
+#sect5 .content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#sect5 .content-section div {
+  width: 54%;
+  text-align: center;
+}
+
+#sect5 .content-section .propuesta {
+  font-family: "StreetvertisingBold";
+  font-size: 25px;
+  color: #62163b;
+}
+
+#sect5 .content-section .propuesta img {
+  max-height: 22vh;
+}
+
+#sect5 .content-section .subpropuesta {
+  margin-top: -3vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  font-family: "StreetvertisingLight";
+  font-size: 19px;
+  color: #2a2628;
+  border-left: 2px solid #333;
+  border-right: 2px solid #333;
+}
+
+.nuestros-servicios {
+  position: absolute;
+  left: 55vw;
+  top: 10vh;
+  color: #62163b;
+}
+
+.pregunta-reinventarse {
+  cursor: pointer;
+  height: 15vh;
+  width: 7vw !important;
+  background-image: url("/images/interroga.png");
+  background-position: 0;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "StreetvertisingBold";
+  color: #62163b;
+  font-size: 25px;
+}
+
+#sect6 .background-section {
+  z-index: -6;
+  background-color: white;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -609,6 +824,7 @@ section, .background-section, .content-section {
 body {
   margin: 0;
   font-family: "Streetvertising";
+  overflow-x: hidden;
 }
 
 a {

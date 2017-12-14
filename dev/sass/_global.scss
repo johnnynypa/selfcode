@@ -10,6 +10,7 @@ $fuente : "Streetvertising";
 
 //Colors
 $Morado_Primary : #62163b;
+$Morado_Primary_Opacity : rgba(56, 8, 22, 0.856);
 $Morado_Dark_Opacity : rgba(27, 0, 7, 0.92);
 $Morado_Opacity : rgb(153, 114, 145);
 $Morado_Primary_Claro : rgba(128, 45, 87, 0.075);
@@ -21,3 +22,7 @@ $Morado_Fondo_Texto : rgba(98, 22, 60, 0.631);
 //Imagenes
 $huella : "/images/huella.png";
 $huellaOpacity : "/images/huellaOpacity.png";
+
+
+//Others
+$Inclinacion : 33deg;

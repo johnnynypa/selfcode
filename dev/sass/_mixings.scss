@@ -65,17 +65,17 @@
 	text-align: center;
 }
 
-@mixin textTitleSection() {
+@mixin textTitleSection($tam : 28px) {
 	font-family: $fuente_Bold;
-	font-size: 28px;
+	font-size: $tam;
 	color: $Morado_Primary;
 }
 
-@mixin textSubtitleSection($borde : 6vh) {
+@mixin textSubtitleSection($borde : 6vh, $tam : 20px) {
 	padding-left: $borde;
 	padding-right: $borde;
 	font-family: $fuente_Light;
-	font-size: 20px;
+	font-size: $tam;
 	color: #2a2628;
 	border-left: 2px solid #333;
 	border-right: 2px solid #333;

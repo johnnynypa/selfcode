@@ -1,0 +1,163 @@
+@import '../_global.scss';
+@import '../_mixings.scss';
+
+#sect5{
+    .background-section{
+        .background-background{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: -12;
+            img{
+                max-height: 130vh;
+                margin-top: -20vh;
+                margin-left: -25vw;
+            }
+
+            #back2{
+                transform:rotate(180deg);
+            }
+        }
+        .background-front{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .diagonal{
+                // position: absolute;
+                border-left: 20px solid $Morado_Primary;
+                border-right: 20px solid $Morado_Primary;
+                height: 100vh;
+                width: 70vw;
+                background-color: white;
+                transform: skewX(-$Inclinacion);
+            }
+            .diag{
+                height: 50vh;
+                position: absolute;
+                background-color: $Morado_Primary;
+                transform: skewX(-$Inclinacion);
+            }
+            #diag1{
+                width: 12px;
+                left: 0;
+                top: -17vh;
+                background-color: $Morado_Primary;
+            }
+            #diag2{
+                width: 2px !important;
+                left: -20px;
+                top: -7vh;
+                background-color: $Morado_Primary;
+            }
+            #diag3{
+                height: 90vh;
+                width: 33vh;
+                left: -13vh;
+                top: 0vh;
+                background-color: $Morado_Primary_Opacity;
+            }
+            #diag4{
+                height: 100vh;
+                width: 25px;
+                left: 180px;
+                top: 0vh;
+                background-color: $Morado_Primary_Opacity;
+            }
+            #diag5{
+                width: 5px;
+                left: 18vw;
+                top: 84vh;
+                background-color: $Morado_Primary;
+            }
+            #diag6{
+                width: 15px;
+                left: 18vw;
+                top: 88vh;
+                background-color: $Morado_Primary;
+            }
+            #diag7{
+                height: 15vh;
+                width: 20px;
+                left: 65vw;
+                top: -5vh;
+                background-color: $Morado_Primary;
+            }
+            #diag8{
+                height: 100vh;
+                width: 25px;
+                left: 85vw;
+                top: 0vh;
+                background-color: $Morado_Primary_Opacity;
+            }
+            #diag9{
+                height: 70vh;
+                width: 8px;
+                left: 90vw;
+                top: -7vh;
+                background-color: $Morado_Primary;
+            }
+            #diag10{
+                height: 65vh;
+                width: 8px;
+                left: 92vw;
+                top: -7vh;
+                background-color: $Morado_Dark_Opacity;
+            }
+            #diag11{
+                height: 70vh;
+                width: 8px;
+                left: 94.8vw;
+                top: 20vh;
+                background-color: $Morado_Primary;
+            }
+            #diag12{
+                height: 70vh;
+                width: 20vw;
+                left: 93vw;
+                top: 30vh;
+                background-color: $Morado_Dark_Opacity;
+            }
+        }
+    }
+    
+    .content-section{
+        @include textSectionPadre();
+        div{
+            @include textSection(54%);
+        }
+        .propuesta {
+            img{
+                max-height: 22vh;
+            }
+            @include textTitleSection(25px);
+        }
+        .subpropuesta {
+            margin-top: -3vh;
+            @include textSubtitleSection(2vh, 19px);
+        }
+    }
+}
+
+.nuestros-servicios{
+    position: absolute;
+    left: 55vw;
+    top: 10vh;
+    color: $Morado_Primary;
+}
+
+.pregunta-reinventarse{
+    
+    cursor: pointer;
+    height: 15vh;
+    width: 7vw !important;
+    @include background("/images/interroga.png", 0, center, no-repeat, 8vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fuente_Bold;
+    color: $Morado_Primary;
+    font-size: 25px;
+}
