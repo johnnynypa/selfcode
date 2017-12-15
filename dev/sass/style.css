@@ -627,11 +627,11 @@ section, .background-section, .content-section {
   justify-content: center;
   align-items: center;
   position: absolute;
-  z-index: -12;
 }
 
 #sect5 .background-section .background-background img {
-  max-height: 130vh;
+  z-index: -15;
+  max-height: 145vh;
   margin-top: -20vh;
   margin-left: -25vw;
 }
@@ -813,8 +813,84 @@ section, .background-section, .content-section {
 }
 
 #sect6 .background-section {
-  z-index: -6;
-  background-color: white;
+  background-color: #F1E6EC;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#sect6 .background-section div {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "StreetvertisingBold";
+  color: rgba(128, 45, 87, 0.075);
+}
+
+#sect6 .background-section #sect6-1 {
+  height: 50vh;
+}
+
+#sect6 .background-section #sect6-2 {
+  height: 50vh;
+}
+
+#sect6 .background-section #sect6-2 span {
+  font-size: 45vh;
+  margin-left: 100vw;
+}
+
+#sect6 .content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#sect6 .content-section div {
+  width: 35%;
+  text-align: center;
+}
+
+#sect6 .content-section .propuesta {
+  font-family: "StreetvertisingBold";
+  font-size: 25px;
+  color: #62163b;
+}
+
+#sect6 .content-section .propuesta img {
+  max-height: 22vh;
+}
+
+#sect6 .content-section .subpropuesta {
+  margin-top: -3vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  font-family: "StreetvertisingLight";
+  font-size: 19px;
+  color: #2a2628;
+  border-left: 2px solid #333;
+  border-right: 2px solid #333;
+  text-align: justify;
+}
+
+.nuestros-workshops {
+  position: absolute;
+  left: 55vw;
+  top: 10vh;
+  color: #62163b;
+}
+
+.ver-mas {
+  cursor: pointer;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "StreetvertisingBold";
+  color: #62163b;
+  font-size: 25px;
 }
 
 * {
@@ -830,6 +906,10 @@ body {
 a {
   text-decoration: none;
   color: black;
+}
+
+h3 {
+  margin: 0;
 }
  
 

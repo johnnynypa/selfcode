@@ -4,10 +4,63 @@
 #sect6{
 
     .background-section{
-        z-index: -6;
-        background-color: white;
+        background-color: $Morado_Suave_Fondo;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        div{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $fuente_Bold;
+            color: $Morado_Primary_Claro;
+        }
+        #sect6-1{
+            height: 50vh;
+        }
+        #sect6-2{
+            height: 50vh;
+            span{
+                font-size: 45vh;
+                margin-left: 100vw;
+            }
+        }
     }
     .content-section{
-
+        @include textSectionPadre();
+        div{
+            @include textSection(35%);
+        }
+        .propuesta {
+            img{
+                max-height: 22vh;
+            }
+            @include textTitleSection(25px);
+        }
+        .subpropuesta {
+            margin-top: -3vh;
+            @include textSubtitleSection(2vh, 19px);
+            text-align: justify;
+        }
     }
+}
+
+.nuestros-workshops{
+    position: absolute;
+    left: 55vw;
+    top: 10vh;
+    color: $Morado_Primary;
+}
+
+
+.ver-mas{
+    cursor: pointer;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fuente_Bold;
+    color: $Morado_Primary;
+    font-size: 25px;
 }
