@@ -1,0 +1,140 @@
+#sect8{
+    .background-section{
+        z-index: -20;
+        @include background("/images/000.jpg", 0, 0, no-repeat, 100vw);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .diag{
+            height: 50vh;
+            min-width: 10px;
+            position: absolute;
+            background-color: $Morado_Primary_Opacity;
+            transform: skewX($Inclinacion);
+        }
+        #diag1{
+            height: 60vh;
+            width: 20vw;
+            left: -11vw;
+            top: 40vh;
+        }
+        #diag2{
+            height: 60vh;
+            width: 12px;
+            left: 18vw;
+            top: 60vh;
+            background-color: $Morado_Dark_Opacity;
+        }
+        #diag3{
+            height: 85vh;
+            width: 23px;
+            left: 11vw;
+            top: 15vh;
+        }
+        #diag4{
+            height: 70vh;
+            width: 12px;
+            left: 7vw;
+            top: -10vh;
+            background-color: $Morado_Primary_Opacity;
+        }
+        #diag5{
+            height: 100vh;
+            width: 60vw;
+            left: 20vw;
+            top: 0vh;
+            background-color: $Blanco_Opacity;
+            border-left: $Morado_Primary 15px solid;
+        }
+        #diag6{
+            width: 3px !important;
+            left: 82vw;
+            top: 80vh;
+            background-color: $Morado_Primary_Opacity;
+        }
+        #diag7{
+            width: 2px !important;
+            left: 85vw;
+            top: 86vh;
+            background-color: $Morado_Primary_Opacity;
+        }
+        #diag8{
+            width: 45px;
+            left: 75vw;
+            top: 0vh;
+            background-color: $Morado_Dark_Opacity;
+        }
+        #diag9{
+            height: 10vh;
+            width: 10px;
+            left: 98vw;
+            top: 10vh;
+            background-color: $Morado_Dark_Opacity;
+        }
+        #diag10{
+            width: 50px;
+            left: 95vw;
+            top: -3vh;
+            background-color: $Morado_Dark_Opacity;
+        }
+        #diag11{
+            // height: 70vh;
+            width: 12px;
+            left: 98vw;
+            top: 42vh;
+            background-color: $Morado_Primary_Opacity;
+        }
+        #diag12{
+            width: 50px;
+            left: 102vw;
+            top: -3vh;
+            background-color: $Morado_Primary_Opacity;
+        }
+    }
+    .content-section{
+        @include textSectionPadre();
+        hitos, .propuesta{
+            @include textSection(70%);
+        }
+        .propuesta {
+            margin-top: -10vh;
+            @include textTitleSection(25px);
+        }
+    }
+}
+
+.hitos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-hitos{
+    min-height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+    align-items: center;
+    .hito-container{
+        margin-right: 5px;
+        margin-left: 5px;
+        width: 20vw;
+        height: 20vh;
+        border-left: 1.5px solid #333;
+        border-right: 1.5px solid #333;
+        text-align: center;
+        h1{
+            margin:  0;
+            color: #303030;
+            font-family: $fuente_Bold;
+            font-size: 50px;
+        }
+        span{
+            color: #2a2628;
+            font-size: 15px;
+            font-family: $fuente_Light;
+        }
+    }
+}

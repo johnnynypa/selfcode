@@ -1,0 +1,54 @@
+#sect7{
+    .background-section{
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        div{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $fuente_Bold;
+            color: $Morado_Primary_Claro;
+        }
+        #sect7-1{
+            height: 65vh;
+            span{
+                font-size: 65vh;
+                margin-left: 160vw;
+            }
+        }
+        #sect7-2{
+            height: 35vh;
+            span{
+                font-size: 23vh;
+                margin-left: -80vw;
+            }
+        }
+    }
+    .content-section{
+        @include textSectionPadre();
+        div{
+            @include textSection(50%);
+        }
+        .propuesta {
+            img{
+                max-height: 22vh;
+            }
+            @include textTitleSection(25px);
+        }
+        .subpropuesta {
+            margin-top: -3vh;
+            @include textSubtitleSection(4vh, 19px);
+            text-align: justify;
+        }
+    }
+}
+
+.programas-especiales{
+    position: absolute;
+    left: 60vw;
+    top: 10vh;
+    color: $Morado_Primary;
+}
