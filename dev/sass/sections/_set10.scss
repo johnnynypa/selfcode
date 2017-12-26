@@ -1,0 +1,149 @@
+#sect10{
+$Inclinacion : $Inclinacion *(-1);
+
+    .background-section{
+        z-index: -20;
+        background-color: rgba(255, 255, 255, 0.5);
+        @include background("/images/001.jpg", 0, 0, no-repeat, 100vw);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .fondoOpacity{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        .diag{
+            height: 50vh;
+            position: absolute;
+            background-color: $Morado_Primary_Opacity;
+            transform: skewX($Inclinacion);
+        }
+        #diag1{
+            height: 42vh;
+            width: 20vw;
+            left: 93vw;
+            top: 58vh;
+        }
+        #diag2{
+            height: 45vh;
+            width: 10px;
+            left: 92vw;
+            top: 55vh;
+            background-color: $Morado_Dark_Opacity;
+        }
+        #diag3{
+            width: 7px !important;
+            left: 100vw;
+            top: 0vh;
+        }
+        #diag4{
+            width: 9px;
+            left: 100vw;
+            top: -5vh;
+            background-color: $Morado_Primary;
+        }
+        #diag6{
+            width: 30px !important;
+            left: 100vw;
+            top: -20vh;
+            background-color: $Morado_Primary_Opacity;
+        }
+        #diag7{
+            width: 7px !important;
+            left: 102vw;
+            top: -30vh;
+            background-color: $Morado_Primary;
+        }
+        #diag8{
+            width: 18px !important;
+            left: 93vw;
+            top: -35vh;
+            background-color: $Morado_Primary;
+        }
+        #diag9{
+            height: 12vh;
+            width: 4px !important;
+            left: 65vw;
+            top: 88vh;
+            background-color: $Morado_Primary;
+        }
+        #diag10{
+            height: 9vh;
+            width: 25px;
+            left: 62vw;
+            top: 91vh;
+            background-color: $Morado_Dark_Opacity;
+        }
+        #diag11{
+            height: 15vh;
+            width: 30px;
+            left: 40vw;
+            top: 0vh;
+            background-color: $Morado_Primary_Opacity;
+        }
+        #diag12{
+            width: 130px;
+            left: -8vw;
+            top: 0vh;
+            background-color: $Morado_Primary;
+        }
+        #diag13{
+            width: 15px;
+            left: -2vw;
+            top: 50vh;
+            background-color: $Morado_Primary;
+        }
+        #diag14{
+            width: 50px;
+            left: -3vw;
+            top: 59vh;
+            background-color: $Morado_Dark_Opacity;
+        }
+        #diag15{
+            width: 9px;
+            left: -3vw;
+            top: 73vh;
+            background-color: $Morado_Dark_Opacity;
+        }
+    }
+    .content-section{
+        @include textSectionPadre();
+        .testimonios, .propuesta{
+            @include textSection(78%);
+        }
+        .propuesta {
+            @include textTitleSection(25px);
+        }
+        .testimonios{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+.testi{
+    width: 23vw;
+    height: 50vh;
+    border-left: #383838 .8px solid;
+    border-right: #383838 .8px solid;
+    .back{
+        z-index: -10;
+        position: absolute;
+        display: flex;
+    }
+    .content{
+        position: relative;
+    }
+}
+
+.comilla{
+    height: 50vh;
+    width: 11.5vw;
+    @include background("/images/comillas.png", 0, 6vw, no-repeat, 8vh);
+}
+
+.comilla1{
+    transform:rotate(180deg);
+}

@@ -93,7 +93,7 @@
     }
     .content-section{
         @include textSectionPadre();
-        hitos, .propuesta{
+        .hitos, .propuesta{
             @include textSection(70%);
         }
         .propuesta {

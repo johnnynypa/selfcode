@@ -1084,7 +1084,7 @@ section, .background-section, .content-section {
   flex-direction: column;
 }
 
-#sect8 .content-section hitos, #sect8 .content-section .propuesta {
+#sect8 .content-section .hitos, #sect8 .content-section .propuesta {
   width: 70%;
   text-align: center;
 }
@@ -1219,6 +1219,188 @@ section, .background-section, .content-section {
 .content-equipo {
   width: 29vh !important;
   height: 29vh;
+}
+
+#sect10 .background-section {
+  z-index: -20;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: url("/images/001.jpg");
+  background-position: 0;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#sect10 .background-section .fondoOpacity {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#sect10 .background-section .diag {
+  height: 50vh;
+  position: absolute;
+  background-color: rgba(56, 8, 22, 0.856);
+  transform: skewX(-33deg);
+}
+
+#sect10 .background-section #diag1 {
+  height: 42vh;
+  width: 20vw;
+  left: 93vw;
+  top: 58vh;
+}
+
+#sect10 .background-section #diag2 {
+  height: 45vh;
+  width: 10px;
+  left: 92vw;
+  top: 55vh;
+  background-color: rgba(27, 0, 7, 0.92);
+}
+
+#sect10 .background-section #diag3 {
+  width: 7px !important;
+  left: 100vw;
+  top: 0vh;
+}
+
+#sect10 .background-section #diag4 {
+  width: 9px;
+  left: 100vw;
+  top: -5vh;
+  background-color: #62163b;
+}
+
+#sect10 .background-section #diag6 {
+  width: 30px !important;
+  left: 100vw;
+  top: -20vh;
+  background-color: rgba(56, 8, 22, 0.856);
+}
+
+#sect10 .background-section #diag7 {
+  width: 7px !important;
+  left: 102vw;
+  top: -30vh;
+  background-color: #62163b;
+}
+
+#sect10 .background-section #diag8 {
+  width: 18px !important;
+  left: 93vw;
+  top: -35vh;
+  background-color: #62163b;
+}
+
+#sect10 .background-section #diag9 {
+  height: 12vh;
+  width: 4px !important;
+  left: 65vw;
+  top: 88vh;
+  background-color: #62163b;
+}
+
+#sect10 .background-section #diag10 {
+  height: 9vh;
+  width: 25px;
+  left: 62vw;
+  top: 91vh;
+  background-color: rgba(27, 0, 7, 0.92);
+}
+
+#sect10 .background-section #diag11 {
+  height: 15vh;
+  width: 30px;
+  left: 40vw;
+  top: 0vh;
+  background-color: rgba(56, 8, 22, 0.856);
+}
+
+#sect10 .background-section #diag12 {
+  width: 130px;
+  left: -8vw;
+  top: 0vh;
+  background-color: #62163b;
+}
+
+#sect10 .background-section #diag13 {
+  width: 15px;
+  left: -2vw;
+  top: 50vh;
+  background-color: #62163b;
+}
+
+#sect10 .background-section #diag14 {
+  width: 50px;
+  left: -3vw;
+  top: 59vh;
+  background-color: rgba(27, 0, 7, 0.92);
+}
+
+#sect10 .background-section #diag15 {
+  width: 9px;
+  left: -3vw;
+  top: 73vh;
+  background-color: rgba(27, 0, 7, 0.92);
+}
+
+#sect10 .content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#sect10 .content-section .testimonios, #sect10 .content-section .propuesta {
+  width: 78%;
+  text-align: center;
+}
+
+#sect10 .content-section .propuesta {
+  font-family: "StreetvertisingBold";
+  font-size: 25px;
+  color: #62163b;
+}
+
+#sect10 .content-section .testimonios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.testi {
+  width: 23vw;
+  height: 50vh;
+  border-left: #383838 .8px solid;
+  border-right: #383838 .8px solid;
+}
+
+.testi .back {
+  z-index: -10;
+  position: absolute;
+  display: flex;
+}
+
+.testi .content {
+  position: relative;
+}
+
+.comilla {
+  height: 50vh;
+  width: 11.5vw;
+  background-image: url("/images/comillas.png");
+  background-position: 0;
+  background-position-x: 6vw;
+  background-repeat: no-repeat;
+  background-size: 8vh;
+}
+
+.comilla1 {
+  transform: rotate(180deg);
 }
 
 * {
